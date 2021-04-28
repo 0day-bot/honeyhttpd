@@ -20,8 +20,8 @@
         }
     },
     "servers" : [
-        {"handler": "ApacheServer", "mode": "https", "port": 8443, "domain": "example.com", "timeout": 10, "cert_path": "server.pem"},
-        {"handler": "ApacheServer", "mode": "http", "port": 8000, "domain": "example.com", "timeout": 10}
+        {"handler": "ExchangeOwa", "mode": "https", "port": 443, "domain": "example.com", "timeout": 10, "cert_path": "server.pem"},
+        {"handler": "ExchangeOwa", "mode": "http", "port": 80, "domain": "example.com", "timeout": 10}
     ],
     "user": "nobody",
     "group": "nogroup"
