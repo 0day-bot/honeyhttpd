@@ -50,7 +50,9 @@ openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
 From [here](https://gist.github.com/dergachev/7028596).
 
 ## Start Server
+```python
 python3 start.py --config config.json
+```
 
 ## Contributing
 
