@@ -49,6 +49,9 @@ openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
 
 From [here](https://gist.github.com/dergachev/7028596).
 
+## Start Server
+python3 start.py --config config.json
+
 ## Contributing
 
 Go at it! Open an issue, make a pull request, fork it, etc.
