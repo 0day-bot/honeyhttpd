@@ -5,7 +5,7 @@ f = open('/opt/honeyhttpd/servers/response_body.txt', 'r')
 body = f.read()
 f.close()
 
-class TestServer(Server):
+class ExchangeOwa(Server):
 
     def _dump_headers(self, headers):
         print("Headers:")
