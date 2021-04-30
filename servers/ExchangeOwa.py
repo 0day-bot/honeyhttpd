@@ -16,13 +16,13 @@ class ExchangeOwa(Server):
         return "Exchange"
 
     def version(self):
-        return "15"
+        return "4.0.30319"
 
     def system(self):
         return ""
 
     def server_version(self):
-        return "Exchange/150.0.1.1"
+        return "Microsoft-IIS/10.0"
 
     def responses(self):
         return {
