@@ -81,7 +81,7 @@ class TestServer(Server):
         print("Path: ", path)
         self._dump_headers(headers)
 
-        res_headers = [("Content-Type", "text/html;charset=UTF-8"), ("Connection", "Keep-Alive")]
+        res_headers = [("Content-Type", "text/html;charset=UTF-8"), ("Connection", "Keep-Alive"), ("X-CalculatedBETarget", "localhost"), ("X-FEServer", "mail.incorporated.fun") ]
         if path == "/" or path == "/favicon.ico" or path.__contains__("/owa") or path.__contains__("/ecp") or path == "/aspnet_client/8aUco9ZK.aspx":
             return 200, res_headers, body
         elif  path == "/notfound":
